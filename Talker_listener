@@ -126,3 +126,10 @@ def listener():
 
 if __name__ == '__main__':
     listener()
+
+
+launch_file:
+<launch>
+	<node name="talker_node" pkg="beginner_tutorial" type="talker.py" output="screen"/>
+	<node name="listener_node" pkg="beginner_tutorial" type="listener.py" output="screen"/>
+</launch>
